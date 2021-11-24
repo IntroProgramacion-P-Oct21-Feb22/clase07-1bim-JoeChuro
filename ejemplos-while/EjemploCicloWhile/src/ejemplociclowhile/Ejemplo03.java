@@ -5,6 +5,8 @@
  */
 package ejemplociclowhile;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -16,13 +18,16 @@ public class Ejemplo03 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
-        int limite = 10;
+        Scanner entrada = new Scanner(System.in);
+        int limite = 5;
         int contador = 1;
         int suma = 0;
+        int valoringresado;
         while (contador <= limite) {
-            suma = suma + contador;
-            System.out.printf("Contador %d\n", contador);
+            System.out.println("Ingrese el valor a sumar");
+            valoringresado = entrada.nextInt();
+            suma = valoringresado + suma;
+            System.out.printf("Valor ingresado %d\n", valoringresado);
             contador = contador + 1;
         }
 

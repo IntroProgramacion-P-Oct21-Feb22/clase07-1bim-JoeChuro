@@ -20,7 +20,7 @@ public class Ejemplo09 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        int limite_tabla = 12;
+        int limite_tabla = 0;
         int contador = 1;
         int operacion;
         int tabla;
@@ -31,6 +31,8 @@ public class Ejemplo09 {
         String cadena = ""; // cadena acumulador
         System.out.printf("%sTabla de multiplicar\n", cadena);
         
+        System.out.println("Ingrese el limite de la Tabla");
+        limite_tabla = entrada.nextInt ();
         while (contador <= limite_tabla){
             operacion = tabla * contador;
             

@@ -24,51 +24,51 @@ public class UsoSwitch3 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        
+
         System.out.println("Ingrese el nombre de una ciudad del Ecuador");
         String nombre = entrada.nextLine();
         // nombre = "atacames"
         char valor = nombre.charAt(0); // obtener el primer caracter de una
-                                       // cadena
+        // cadena
         //  L   o   j   a
         //  0   1   2   3
-        switch(valor){
+        switch (valor) {
             case 'a':
-            case'A':
-                System.out.printf("Nombre con inicial %s de %s\n", 
+            case 'A':
+                System.out.printf("Nombre con inicial %s de %s\n",
                         valor, nombre.toLowerCase());
                 break;
-            
+
             case 'e':
             case 'E':
-                System.out.printf("Nombre con inicial %s de %s\n", 
+                System.out.printf("Nombre con inicial %s de %s\n",
                         valor, nombre.toLowerCase());
-                break;    
-             
+                break;
+
             case 'i':
             case 'I':
-                System.out.printf("Nombre con inicial %s de %s\n", 
+                System.out.printf("Nombre con inicial %s de %s\n",
                         valor, nombre.toLowerCase());
-                break;    
-            
+                break;
+
             case 'o':
             case 'O':
-                System.out.printf("Nombre con inicial %s de %s\n", 
+                System.out.printf("Nombre con inicial %s de %s\n",
                         valor, nombre.toLowerCase());
-                break;     
-            
+                break;
+
             case 'u':
             case 'U':
-                System.out.printf("Nombre con inicial %s de %s\n", 
+                System.out.printf("Nombre con inicial %s de %s\n",
                         valor, nombre.toLowerCase());
-                break;    
-            
+                break;
+
             default:
                 System.out.println("opción incorrecta; ninguna de las "
                         + "anteriores");
                 break;
-                
+
         }
-        
+
     }
 }
